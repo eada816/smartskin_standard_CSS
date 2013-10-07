@@ -1,0 +1,255 @@
+
+/*================== 2013.10.04 patch ==================*/
+
+
+
+/*==============================================  
+makeshop_common.css 741(line) 
+
+메인상품리스트 진열 수정 
+============================================== */
+
+#container.main .items-wrap .items[data-type=horizontal] {
+display:block;
+font-size: 0;
+}
+
+.items-wrap .items[data-type=horizontal] > li {
+display: inline-block;
+position: relative;
+width: 33.3%;
+margin-bottom: 15px;
+vertical-align: top;
+padding: 0 3px;
+}
+
+/* 상품 아이콘 */
+#container.main .items-wrap .items[data-type=horizontal] .smartskinProductIconSet img{
+display:none;
+}
+
+#container.main .items-wrap .items[data-type=horizontal] .smartskinProductIconSet img:first-child{
+display:block;
+}
+
+/* 상품 아이콘 노출 안함 */
+#container.main .items-wrap .items[data-type=horizontal] .smartskinProductIconSet {
+display:none;
+}
+
+
+
+/*============================================== 
+makeshop_common_add.css 319(line) 
+
+서브상품리스트 진열 수정
+============================================== */
+
+ul.smartskinListPageUIDesign {
+display: block;
+padding: 6px 5px;
+font-size: 0;
+}
+
+
+
+
+
+/*============================================== 
+
+상품리스트 미디어쿼리 수정
+
+============================================== */
+/* 960 over screen size (for PC) */
+@media only screen and (min-width: 960px) {
+	.items-wrap .items[data-type=horizontal] > li {width:25%;}
+	.items-wrap .items[data-type=gallery] > li {width:25%;}
+	
+	#order-list .MK_orderlist ul{width:49.6%;}
+	
+	.smartskinListPageUIDesign li.smartskinListPageContentContainer{ width:25%; }
+}
+
+
+
+
+
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+	
+}
+
+
+
+
+
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.items-wrap .items[data-type=horizontal] > li {width:25%;}
+	.items-wrap .items[data-type=gallery] > li {width:25%;}
+	
+	
+	#order-list .MK_orderlist ul{width:49.6%;}
+	
+	.smartskinListPageUIDesign li.smartskinListPageContentContainer{ width:25%; }
+}
+
+
+
+
+
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	.mobileNone{display:none !important;}
+	
+
+	.smartskinListPageUIDesign li.smartskinListPageContentContainer{ width:33.3%; }
+
+}
+
+
+
+
+
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	
+	
+=======
+/*================== 2013.10.04 patch ==================*/
+
+
+
+/*============================================== 
+makeshop_common.css 741(line) 
+
+메인상품리스트 진열 수정 
+============================================== */
+
+.items-wrap .items[data-type=horizontal] > li {
+display: inline-block;
+position: relative;
+width: 33.3%;
+margin-bottom: 15px;
+vertical-align: top;
+padding: 0 3px;
+}
+
+
+
+
+
+
+/*================== 2013.10.07 patch ==================*/
+
+
+
+/*============================================== 
+makeshop_common_add.css 319(line) 
+
+서브상품리스트 진열 수정
+============================================== */
+
+ul.smartskinListPageUIDesign {
+display:table;
+padding:6px 5px;
+font-size:0;
+}
+
+.smartskinListPageUIDesign li.smartskinListPageContentContainer {
+display: inline-block;
+position: relative;
+width: 33.3%;
+vertical-align: top;
+padding: 0 3px;
+margin-bottom: 15px;
+}
+
+
+
+
+
+/*============================================== 
+makeshop_common_add.css (NEW 추가)
+
+서브상품리스트 진열 수정
+============================================== */
+
+.items-wrap .items[data-type=horizontal] > li dl dd {
+text-align:center;
+}
+
+
+
+
+/*============================================== 
+
+상품리스트 미디어쿼리 수정
+
+============================================== */
+/* 960 over screen size (for PC) */
+@media only screen and (min-width: 960px) {
+	.items-wrap .items[data-type=horizontal] > li {width:25%;}
+	.items-wrap .items[data-type=gallery] > li {width:25%;}
+	
+	#order-list .MK_orderlist ul{width:49.6%;}
+	
+	.smartskinListPageUIDesign li.smartskinListPageContentContainer{ width:25%; }
+}
+
+
+
+
+
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+	
+}
+
+
+
+
+
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.items-wrap .items[data-type=horizontal] > li {width:25%;}
+	.items-wrap .items[data-type=gallery] > li {width:25%;}
+	
+	
+	#order-list .MK_orderlist ul{width:49.6%;}
+	
+	.smartskinListPageUIDesign li.smartskinListPageContentContainer{ width:25%; }
+}
+
+
+
+
+
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	.mobileNone{display:none !important;}
+	
+
+	.smartskinListPageUIDesign li.smartskinListPageContentContainer{ width:33.3%; }
+
+}
+
+
+
+
+
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	
+
+}
